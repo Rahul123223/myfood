@@ -1,10 +1,14 @@
 let cartItem=JSON.parse(localStorage.getItem("Cart"));
 console.log(cartItem)
 getMeal(cartItem)
+let main_div = document.getElementById("menu");
 
 
 function getMeal(arr) {
+  let cart_div=document.getElementById("mymenu")
+
     arr.forEach(function (element) {
+
       let div = document.createElement("div");
   
       let item_num = document.createElement("p");
@@ -19,7 +23,7 @@ function getMeal(arr) {
       img.src = element.strCategoryThumb;
      
       div.append(item_num, id, price, img);
-      document.querySelector("body").append(div)
+      cart_div.append(div);
     });
    
   }

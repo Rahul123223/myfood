@@ -1,23 +1,26 @@
 #navbar {
+  border: 1px solid black;
+  width: 100%;
+  height: 70px;
+}
+#right_side {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  border: 1px solid black;
+  float: right;
+  column-gap: 80px;
+}
+img{
     border: 1px solid black;
-    width: 100%;
-    height: 70px;
-  }
-  #right_side {
-    display: flex;
-    width: 30%;
-    height: 100%;
-    border: 1px solid black;
-    float: right;
-    column-gap: 80px;
-  }
-  img{
-      border: 1px solid black;
-      width: 300px;
-      height: 200px;
-  }
-  #menu{
-      display: grid;
-      grid-template-columns: repeat(4,35%);
-      /* border: 1px solid red; */
-  }
+    width: 300px;
+    height: 200px;
+}
+#menu{
+    display: grid;
+    grid-template-columns: repeat(4,35%);
+   
+}
+#container{
+  border: 1px solid black;
+}
